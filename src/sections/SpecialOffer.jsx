@@ -1,6 +1,41 @@
+import { arrowRight } from "../assets/icons"
+import { offer } from "../assets/images"
+import Button from "../components/Button"
 const SpecialOffer = () => {
   return (
-    <div>SpecialOffer</div>
+    <section className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container ">
+      <div className="flex-1">
+        <img 
+          src={ offer } 
+          alt="Offers"
+          width={773}
+          height={687}
+          className="object-contain w-full" 
+          />
+      </div>
+      <div className="flex flex-1 flex-col">
+      
+        <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg ">
+          <span className="text-coral-red">Special</span> Offer
+        </h2>
+        <p className="mt-4 lg:max-w-lg info-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quas molestiae iusto accusamus harum sapiente doloribus laboriosam veritatis mollitia officia quod, facilis eveniet, tenetur amet minima similique nam labore pariatur!</p>
+        <p className="mt-6 lg:max-w-lg info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam quibusdam, quaerat error iure eum reiciendis aque non!</p>
+        <div className="mt-11 flex flex-wrap gap-4">
+          <Button 
+            lable="Shop now"
+            iconURL={arrowRight}
+            />
+          <Button 
+            lable="Learn more"
+            backgroundColor="bg-white"
+            borderColor="border-slate-gray"
+            textColor="text-slate-gray"
+          />
+        </div>
+
+        
+      </div>
+    </section>
   )
 }
 
